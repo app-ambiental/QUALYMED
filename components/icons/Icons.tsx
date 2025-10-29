@@ -3,15 +3,14 @@ import React from 'react';
 export const QualymedLogoIcon: React.FC<{ className?: string }> = ({ className = "w-10 h-10" }) => (
     <svg xmlns="http://www.w3.org/2000/svg" className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
         {/* Clipboard main body */}
-        <path d="M8 3H5a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-3" />
-        {/* Folded corner */}
-        <path d="M17 21v-4h-4" />
-        <path d="M13 21l4-4" />
-        {/* Clip */}
-        <path d="M9 3v2a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2V3" />
-        <circle cx="12" cy="4" r="1" />
-        {/* Pulse line */}
-        <path d="M7 14h1l1-2 2 4 2-5 1 2h1" />
+        <path d="M9 5H7a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-2" />
+         {/* Clip */}
+        <path d="M15 5a3 3 0 0 0-6 0" />
+        {/* Pulse line with circle */}
+        <path d="M7 14l2-4 2 6 2-4 1.5 3H16" />
+        <circle cx="17" cy="14" r="1" fill="currentColor" stroke="none" />
+         {/* Folded corner */}
+         <path d="M19 21l-4-4h4v4z" />
     </svg>
 );
 
