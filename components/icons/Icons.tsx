@@ -1,19 +1,21 @@
+
 import React from 'react';
 
 export const QualymedLogoIcon: React.FC<{ className?: string }> = ({ className = "w-10 h-10" }) => (
     <svg xmlns="http://www.w3.org/2000/svg" className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round">
-        {/* Clipboard Body */}
-        <path d="M17 21.5H7a2 2 0 0 1-2-2V4.5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2V18l-3.5 3.5z" />
-        {/* Folded Corner Line (Made sharper/more explicit) */}
-        <polyline points="19 18 15.5 18 15.5 21.5" />
+        {/* Clipboard Body - Wider with a clean, folded corner */}
+        <path d="M 4,2.5 h 16 c 1.1,0 2,0.9 2,2 V 17.5 L 18,21.5 H 4 c -1.1,0 -2,-0.9 -2,-2 V 4.5 c 0,-1.1 0.9,-2 2,-2 z" />
         
-        {/* Clip */}
-        <path d="M15 4.5h-6a1 1 0 0 0-1 1v1h8v-1a1 1 0 0 0-1-1z" />
+        {/* Visible clipboard corner behind the fold */}
+        <polyline points="18 21.5 22 21.5 22 17.5" />
+
+        {/* Clip - Adjusted for new width */}
+        <path d="M19 4.5h-14a1 1 0 0 0-1 1v1h16v-1a1 1 0 0 0-1-1z" />
         <circle cx="12" cy="2.5" r="0.5" fill="currentColor" strokeWidth="0" />
 
-        {/* Pulse Line & Circle (Circle moved away from edge) */}
-        <polyline points="7 14 9.5 14 11 10 13 17 15 12.5 16 12.5" />
-        <circle cx="17" cy="12.5" r="1" />
+        {/* Pulse Line & Circle - Centered and spaced */}
+        <polyline points="6 14 9 14 11 10 13 17 15 12.5 18 12.5" />
+        <circle cx="19.5" cy="12.5" r="1" />
     </svg>
 );
 

@@ -20,9 +20,9 @@ const handleSmoothScroll = (e: React.MouseEvent<HTMLAnchorElement>, href: string
 };
 
 const Logo: React.FC = () => (
-    <a href="#home" onClick={(e) => handleSmoothScroll(e, '#home')} className="flex items-center space-x-1" aria-label="Qualymed homepage">
-        <QualymedLogoIcon className="w-10 h-10 text-cyan-700" />
-        <span className="text-2xl font-bold text-cyan-700">QualyMed</span>
+    <a href="#home" onClick={(e) => handleSmoothScroll(e, '#home')} className="flex items-center space-x-2" aria-label="Qualymed homepage">
+        <QualymedLogoIcon className="w-14 h-14 text-cyan-700" />
+        <span className="text-4xl font-bold text-cyan-700">QualyMed</span>
     </a>
 );
 
