@@ -2,9 +2,9 @@
 import React, { useState, useEffect } from 'react';
 
 const images = [
-  'https://images.unsplash.com/photo-1576091160550-2173dba999ef?q=80&w=2070&auto=format&fit=crop', // Saúde & Tecnologia
-  'https://images.unsplash.com/photo-1557804506-669a67965ba0?q=80&w=2070&auto=format&fit=crop', // Reunião de Equipe & Planejamento
-  'https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=2070&auto=format&fit=crop', // Engenharia & Equipamentos de Segurança
+  'https://images.unsplash.com/photo-1621905252507-b35492cc74b4?q=80&w=2069&auto=format&fit=crop', // Engenheiros de segurança com tablet em ambiente industrial
+  'https://images.unsplash.com/photo-1584432810601-6c7f27d2362b?q=80&w=2070&auto=format&fit=crop', // Equipe de profissionais analisando dados de saúde em uma reunião
+  'https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=2232&auto=format&fit=crop', // Equipe em reunião de consultoria ou treinamento
 ];
 
 const handleSmoothScroll = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
