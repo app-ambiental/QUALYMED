@@ -1,5 +1,5 @@
 
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 
 const handleSmoothScroll = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
     e.preventDefault();
@@ -18,12 +18,53 @@ const handleSmoothScroll = (e: React.MouseEvent<HTMLAnchorElement>, href: string
 };
 
 const Hero: React.FC = () => {
+  const [loopNum, setLoopNum] = useState(0);
+  const [isDeleting, setIsDeleting] = useState(false);
+  const [text, setText] = useState('');
+  const [delta, setDelta] = useState(150 - Math.random() * 50);
+  const toRotate = ["Engenharia de Segurança", "Medicina do Trabalho", "Gestão eSocial SST", "Treinamentos e NRs"];
+  const period = 2000;
+
+  useEffect(() => {
+    const ticker = setInterval(() => {
+      tick();
+    }, delta);
+
+    return () => { clearInterval(ticker) };
+  }, [text, delta]);
+
+  const tick = () => {
+    const i = loopNum % toRotate.length;
+    const fullText = toRotate[i];
+    const updatedText = isDeleting
+      ? fullText.substring(0, text.length - 1)
+      : fullText.substring(0, text.length + 1);
+
+    setText(updatedText);
+
+    if (isDeleting) {
+      setDelta(50);
+    }
+
+    if (!isDeleting && updatedText === fullText) {
+      setIsDeleting(true);
+      setDelta(period);
+    } else if (isDeleting && updatedText === '') {
+      setIsDeleting(false);
+      setLoopNum(loopNum + 1);
+      setDelta(150 - Math.random() * 50);
+    }
+  };
+
+
   return (
     <section id="home" className="relative bg-gray-800 text-white" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1576091160550-2173dba999ef?q=80&w=2070&auto=format&fit=crop')", backgroundSize: 'cover', backgroundPosition: 'center' }}>
         <div className="absolute inset-0 bg-black opacity-60"></div>
         <div className="container mx-auto px-6 py-32 md:py-48 relative z-10 text-center">
-            <h1 className="text-4xl md:text-6xl font-extrabold leading-tight mb-4 animate-fade-in-down">
-                Soluções completas para a <span className="text-cyan-400">segurança e saúde</span> do seu negócio.
+            <h1 className="text-4xl md:text-6xl font-extrabold leading-tight mb-4 animate-fade-in-down h-28 md:h-40 flex flex-col justify-center items-center">
+                <span>Soluções completas em</span>
+                <span className="text-cyan-400 whitespace-nowrap border-r-4 border-cyan-400 animate-blink pr-1 min-h-[1.2em]">{text}</span>
+                 <span>para o seu negócio.</span>
             </h1>
             <p className="text-lg md:text-xl text-gray-200 max-w-3xl mx-auto mb-8 animate-fade-in-up">
                 Somos uma empresa inovadora, com profissionais especializados em Medicina e Segurança do Trabalho, prontos para atender de forma individualizada a sua empresa.

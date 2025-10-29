@@ -18,6 +18,13 @@
       body {
         font-family: 'Roboto', sans-serif;
       }
+      @keyframes blink-caret {
+        from, to { border-color: transparent }
+        50% { border-color: #22d3ee; } /* cyan-400 */
+      }
+      .animate-blink {
+        animation: blink-caret .75s step-end infinite;
+      }
     </style>
   <script type="importmap">
 {
