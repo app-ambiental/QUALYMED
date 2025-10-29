@@ -1,10 +1,27 @@
 
+
 import React from 'react';
 import { InstagramIcon, FacebookIcon } from './icons/Icons';
 
 interface FooterProps {
   onOpenPolicy: () => void;
 }
+
+const handleSmoothScroll = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+    e.preventDefault();
+    const targetId = href.substring(1);
+    const targetElement = document.getElementById(targetId);
+    if (targetElement) {
+        const headerOffset = 80;
+        const elementPosition = targetElement.getBoundingClientRect().top;
+        const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+        window.scrollTo({
+            top: offsetPosition,
+            behavior: "smooth"
+        });
+    }
+};
 
 const Footer: React.FC<FooterProps> = ({ onOpenPolicy }) => {
   return (
@@ -28,10 +45,10 @@ const Footer: React.FC<FooterProps> = ({ onOpenPolicy }) => {
           <div>
             <h4 className="font-bold text-lg mb-4">Links Rápidos</h4>
             <ul className="space-y-2">
-              <li><a href="#services" className="text-gray-400 hover:text-white">Serviços</a></li>
-              <li><a href="#why-us" className="text-gray-400 hover:text-white">Sobre Nós</a></li>
-              <li><a href="#testimonials" className="text-gray-400 hover:text-white">Depoimentos</a></li>
-              <li><a href="#contact" className="text-gray-400 hover:text-white">Contato</a></li>
+              <li><a href="#services" onClick={(e) => handleSmoothScroll(e, '#services')} className="text-gray-400 hover:text-white">Serviços</a></li>
+              <li><a href="#why-us" onClick={(e) => handleSmoothScroll(e, '#why-us')} className="text-gray-400 hover:text-white">Sobre Nós</a></li>
+              <li><a href="#testimonials" onClick={(e) => handleSmoothScroll(e, '#testimonials')} className="text-gray-400 hover:text-white">Depoimentos</a></li>
+              <li><a href="#contact" onClick={(e) => handleSmoothScroll(e, '#contact')} className="text-gray-400 hover:text-white">Contato</a></li>
             </ul>
           </div>
 

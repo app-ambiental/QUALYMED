@@ -51,7 +51,7 @@ const WhyChooseUs: React.FC = () => {
       <div className="container mx-auto px-6">
         <div className="flex flex-col lg:flex-row items-center gap-12">
             <div className={`lg:w-1/2 transition-all duration-1000 ease-out ${isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-16'}`}>
-                <img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=2070&auto=format&fit=crop" alt="Equipe Qualymed em reunião" className="rounded-xl shadow-2xl w-full h-auto object-cover"/>
+                <img src="https://images.unsplash.com/photo-1584432810601-6c7f27d2362b?q=80&w=2070&auto=format&fit=crop" alt="Equipe de profissionais analisando dados de saúde em uma reunião, simbolizando o sucesso e a gestão em medicina empresarial" className="rounded-xl shadow-2xl w-full h-auto object-cover"/>
             </div>
             <div className={`lg:w-1/2 transition-all duration-1000 ease-out ${isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-16'}`} style={{ transitionDelay: '200ms' }}>
                 <h2 className="text-4xl font-extrabold text-gray-800 mb-6">Nossa Missão é o seu sucesso</h2>

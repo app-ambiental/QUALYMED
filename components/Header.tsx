@@ -2,8 +2,25 @@
 import React, { useState } from 'react';
 import { QualymedLogoIcon } from './icons/Icons';
 
+const handleSmoothScroll = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+    e.preventDefault();
+    const targetId = href.substring(1);
+    const targetElement = document.getElementById(targetId);
+    if (targetElement) {
+        // O offset pode ser ajustado se o cabeçalho fixo cobrir parte da seção
+        const headerOffset = 80; // Altura aproximada do cabeçalho
+        const elementPosition = targetElement.getBoundingClientRect().top;
+        const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+        window.scrollTo({
+            top: offsetPosition,
+            behavior: "smooth"
+        });
+    }
+};
+
 const Logo: React.FC = () => (
-    <a href="#" className="flex items-center space-x-2" aria-label="Qualymed homepage">
+    <a href="#home" onClick={(e) => handleSmoothScroll(e, '#home')} className="flex items-center space-x-2" aria-label="Qualymed homepage">
         <QualymedLogoIcon className="w-9 h-9 text-cyan-700" />
         <span className="text-2xl font-bold text-gray-800">Qualymed</span>
     </a>
@@ -20,6 +37,11 @@ const Header: React.FC = () => {
     { href: '#contact', label: 'Contato' },
   ];
 
+  const handleLinkClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+    handleSmoothScroll(e, href);
+    setIsMenuOpen(false); // Fecha o menu móvel no clique
+  };
+
   return (
     <header className="bg-white/80 backdrop-blur-md shadow-md sticky top-0 z-50">
       <div className="container mx-auto px-6 py-4">
@@ -27,13 +49,13 @@ const Header: React.FC = () => {
           <Logo />
           <nav className="hidden md:flex items-center space-x-8">
             {navLinks.map((link) => (
-              <a key={link.href} href={link.href} className="text-gray-600 hover:text-cyan-600 transition-colors duration-300 font-medium">
+              <a key={link.href} href={link.href} onClick={(e) => handleSmoothScroll(e, link.href)} className="text-gray-600 hover:text-cyan-600 transition-colors duration-300 font-medium">
                 {link.label}
               </a>
             ))}
           </nav>
           <div className="flex items-center space-x-4">
-             <a href="#contact" className="hidden sm:inline-block bg-cyan-600 text-white font-bold py-2 px-6 rounded-full hover:bg-cyan-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">
+             <a href="https://wa.me/5521995607848" target="_blank" rel="noopener noreferrer" className="hidden sm:inline-block bg-cyan-600 text-white font-bold py-2 px-6 rounded-full hover:bg-cyan-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">
                 Solicitar Proposta
             </a>
             <button
@@ -67,11 +89,11 @@ const Header: React.FC = () => {
         >
           <nav className="flex flex-col space-y-4 mt-4 pb-4">
             {navLinks.map((link) => (
-              <a key={link.href} href={link.href} onClick={() => setIsMenuOpen(false)} className="text-gray-600 hover:text-cyan-600 transition-colors duration-300 py-2 text-center">
+              <a key={link.href} href={link.href} onClick={(e) => handleLinkClick(e, link.href)} className="text-gray-600 hover:text-cyan-600 transition-colors duration-300 py-2 text-center">
                 {link.label}
               </a>
             ))}
-            <a href="#contact" onClick={() => setIsMenuOpen(false)} className="bg-cyan-600 text-white font-bold py-3 px-6 rounded-full text-center hover:bg-cyan-700 transition-all duration-300 shadow-lg">
+            <a href="https://wa.me/5521995607848" target="_blank" rel="noopener noreferrer" className="bg-cyan-600 text-white font-bold py-3 px-6 rounded-full text-center hover:bg-cyan-700 transition-all duration-300 shadow-lg">
               Solicitar Proposta
             </a>
           </nav>

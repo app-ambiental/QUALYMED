@@ -6,25 +6,25 @@ const testimonialsData: Testimonial[] = [
     quote: 'A Qualymed transformou nossa gestão de SST. A equipe é proativa e extremamente competente. Recomendo fortemente.',
     name: 'Ana Costa',
     role: 'Gerente de RH, Indústria Metalúrgica',
-    avatar: 'https://picsum.photos/100/100?random=2',
+    avatar: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=388&auto=format&fit=crop',
   },
   {
     quote: 'Desde que contratamos a Qualymed, nossos processos de segurança estão mais eficientes e alinhados com a legislação.',
     name: 'Marcos Lima',
     role: 'Diretor, Empresa de Logística',
-    avatar: 'https://picsum.photos/100/100?random=3',
+    avatar: 'https://images.unsplash.com/photo-1568602471122-7832951cc4c5?q=80&w=500&auto=format&fit=crop',
   },
   {
     quote: 'O acompanhamento e os treinamentos foram essenciais para reduzir acidentes e aumentar a conscientização da nossa equipe.',
     name: 'Beatriz Souza',
     role: 'Coordenadora de Segurança, Construtora',
-    avatar: 'https://picsum.photos/100/100?random=4',
+    avatar: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=387&auto=format&fit=crop',
   },
 ];
 
 const TestimonialCard: React.FC<Testimonial> = ({ quote, name, role, avatar }) => (
     <div className="bg-white p-8 rounded-xl shadow-lg flex flex-col items-center text-center h-full">
-        <img src={avatar} alt={name} className="w-20 h-20 rounded-full mb-4 border-4 border-cyan-200" />
+        <img src={avatar} alt={name} className="w-20 h-20 rounded-full mb-4 border-4 border-cyan-200 object-cover" />
         <p className="text-gray-600 italic mb-6 flex-grow">"{quote}"</p>
         <div>
             <h4 className="font-bold text-gray-800 text-lg">{name}</h4>

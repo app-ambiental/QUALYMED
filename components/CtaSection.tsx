@@ -1,3 +1,4 @@
+
 import React from 'react';
 
 const CtaSection: React.FC = () => {
@@ -8,7 +9,7 @@ const CtaSection: React.FC = () => {
                 <p className="text-lg text-cyan-100 max-w-2xl mx-auto mb-8">
                     Nossa equipe de especialistas está pronta para desenvolver a solução ideal para o seu negócio. Entre em contato e solicite uma proposta.
                 </p>
-                <a href="#contact" className="bg-white text-cyan-800 font-bold py-3 px-8 rounded-full hover:bg-gray-100 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 text-lg">
+                <a href="https://wa.me/5521995607848" target="_blank" rel="noopener noreferrer" className="bg-white text-cyan-800 font-bold py-3 px-8 rounded-full hover:bg-gray-100 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 text-lg">
                     Solicitar Proposta
                 </a>
             </div>
