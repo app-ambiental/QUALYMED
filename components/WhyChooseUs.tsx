@@ -50,8 +50,8 @@ const WhyChooseUs: React.FC = () => {
     <section id="why-us" ref={sectionRef} className="py-20 bg-white overflow-hidden">
       <div className="container mx-auto px-6">
         <div className="flex flex-col lg:flex-row items-center gap-12">
-            <div className={`lg:w-1/2 transition-all duration-1000 ease-out ${isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-16'}`}>
-                <img src="https://images.unsplash.com/photo-1551601651-2a8555f1a136?q=80&w=2070&auto=format&fit=crop" alt="Profissional de saúde analisando dados em um tablet, simbolizando a modernidade e a gestão de saúde ocupacional." className="rounded-xl shadow-2xl w-full h-auto object-cover"/>
+            <div className={`lg:w-1/2 transition-all duration-1000 ease-out flex items-center justify-center ${isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-16'}`}>
+                <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=2070&auto=format&fit=crop" alt="Equipe de especialistas da Qualymed em reunião de planejamento, simbolizando o sucesso e a segurança do cliente." className="rounded-xl shadow-2xl w-full h-auto"/>
             </div>
             <div className={`lg:w-1/2 transition-all duration-1000 ease-out ${isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-16'}`} style={{ transitionDelay: '200ms' }}>
                 <h2 className="text-4xl font-extrabold text-gray-800 mb-6">Nossa Missão é o seu sucesso</h2>
