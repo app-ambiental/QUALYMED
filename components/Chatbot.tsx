@@ -27,12 +27,24 @@ const knowledgeBase: { keywords: string[]; response: string }[] = [
 
     // === INFORMAÇÕES GERAIS SOBRE A QUALYMED ===
     {
-        keywords: ['serviços', 'fazem', 'oferecem', 'trabalham', 'atuação'],
-        response: 'Nós oferecemos soluções completas em **Engenharia de Segurança**, **Medicina do Trabalho**, **Gestão eSocial SST** e **Treinamentos de NRs**. Sobre qual deles você gostaria de saber mais?',
+        keywords: ['quem são', 'sobre a qualymed', 'o que é a qualymed', 'fale sobre a empresa'],
+        response: 'Somos a **Qualymed**, uma empresa inovadora com profissionais especializados em Saúde e Segurança do Trabalho. Nossa equipe tem grande experiência e está preparada para atender sua empresa de forma individualizada, com foco na gestão preventiva de riscos.',
+    },
+     {
+        keywords: ['missão', 'propósito', 'qual a missão'],
+        response: 'Nossa missão é ajudar os negócios a se tornarem mais sustentáveis, prósperos e seguros, garantindo a perenidade das empresas através da **gestão preventiva dos riscos ocupacionais**. Buscamos ser referência com credibilidade e confiança.',
     },
     {
-        keywords: ['quem são', 'sobre a qualymed', 'o que é a qualymed', 'fale sobre a empresa'],
-        response: 'Somos a **Qualymed**, seus especialistas em **Saúde e Segurança do Trabalho**. Nossa missão é ajudar sua empresa a ser mais segura, saudável e em total conformidade com a legislação.',
+        keywords: ['visão', 'futuro da empresa', 'qual a visão'],
+        response: 'Nossa visão é **evoluir constantemente em tecnologia** e nos processos de gestão para nos mantermos como referência no mercado de Medicina e Engenharia de Segurança do Trabalho.',
+    },
+    {
+        keywords: ['valores', 'princípios'],
+        response: 'Nossos valores fundamentais são: **Qualidade**, **Ética**, **Compromisso**, **Confiabilidade** e **Respeito**.',
+    },
+    {
+        keywords: ['serviços', 'fazem', 'oferecem', 'trabalham', 'atuação'],
+        response: 'Oferecemos soluções completas com conteúdo técnico e humano, visando não apenas os aspectos legais, mas a saúde global dos colaboradores. Nossos principais serviços são **Engenharia de Segurança**, **Medicina do Trabalho**, **Gestão eSocial SST** e **Treinamentos de NRs**. Sobre qual deles você gostaria de saber mais?',
     },
     {
         keywords: ['diferencial', 'por que escolher', 'vantagem'],
@@ -49,14 +61,6 @@ const knowledgeBase: { keywords: string[]; response: string }[] = [
     {
         keywords: ['contato', 'telefone', 'falar com', 'zap', 'whatsapp', 'número'],
         response: 'Para agendamentos, o número é (21) 99756-7806. Para assuntos comerciais, o melhor caminho é pelo nosso WhatsApp. É só clicar no botão. [BOTÃO_WHATSAPP]',
-    },
-    {
-        keywords: ['atendem minha cidade', 'região de atendimento', 'atendem em saquarema', 'atendem em tanguá', 'atendem em itaboraí'],
-        response: 'Nossa base é em Rio Bonito/RJ, mas atendemos diversas cidades na região. Qual é a sua cidade para eu poder verificar a disponibilidade?',
-    },
-    {
-        keywords: ['clientes', 'referências', 'quem vocês atendem'],
-        response: 'Atendemos com orgulho empresas de diversos segmentos, como construção civil, indústria, comércio e logística. A confidencialidade de nossos clientes é importante, mas podemos garantir que temos vasta experiência no seu setor!',
     },
 
     // === DÚVIDAS INICIAIS (LEIGAS) ===
@@ -81,17 +85,17 @@ const knowledgeBase: { keywords: string[]; response: string }[] = [
         response: 'Ótima preocupação! Para evitar multas e ficar em dia, sua empresa precisa ter a gestão de SST completa: **PGR**, **PCMSO**, **LTCAT**, **envios para o eSocial** e **treinamentos**. Nós somos especialistas em deixar tudo 100% regularizado para você. Quer começar? [BOTÃO_WHATSAPP]',
     },
 
-    // === ENGENHARIA DE SEGURANÇA (PGR, LTCAT, LAUDOS) ===
+    // === ENGENHARIA DE SEGURANÇA ===
     {
         keywords: ['engenharia', 'segurança'],
-        response: 'Claro! Em **Engenharia de Segurança**, nosso foco é identificar, avaliar e controlar os riscos no ambiente de trabalho. Elaboramos documentos essenciais como o **PGR** e o **LTCAT**. O que você precisa?',
+        response: 'Claro! Em **Engenharia de Segurança**, nosso foco é identificar, avaliar e controlar os riscos no ambiente de trabalho. Elaboramos documentos essenciais como o **PGR**, **LTCAT**, Laudos, AET e muito mais. O que você precisa?',
     },
     {
-        keywords: ['pgr', 'programa de gerenciamento de riscos', 'o que é pgr'],
-        response: 'O **PGR (Programa de Gerenciamento de Riscos)** é um documento obrigatório que substituiu o PPRA. Ele inclui o **Inventário de Riscos** e o **Plano de Ação** para tornar o ambiente de trabalho mais seguro.',
+        keywords: ['pgr', 'programa de gerenciamento de riscos'],
+        response: 'O **PGR (Programa de Gerenciamento de Riscos)** é um documento obrigatório (NR-01) que substituiu o PPRA. Ele inclui o **Inventário de Riscos** e o **Plano de Ação** para tornar o ambiente de trabalho mais seguro.',
     },
     {
-        keywords: ['ltcat', 'laudo técnico das condições do ambiente de trabalho', 'o que é ltcat'],
+        keywords: ['ltcat', 'laudo técnico das condições do ambiente de trabalho'],
         response: 'O **LTCAT** é um laudo conclusivo sobre a exposição do trabalhador a agentes nocivos, fundamental para fins de **aposentadoria especial** junto ao INSS. Ele serve de base para o preenchimento do PPP.',
     },
     {
@@ -107,23 +111,43 @@ const knowledgeBase: { keywords: string[]; response: string }[] = [
         response: 'A **AET (Análise Ergonômica do Trabalho)**, exigida pela NR-17, avalia a adaptação das condições de trabalho às características psicofisiológicas dos trabalhadores, visando conforto, segurança e desempenho eficiente.',
     },
     {
-        keywords: ['pgr substitui ppra', 'ppra ainda existe', 'diferença ppra pgr'],
-        response: 'Sim, o **PGR (Programa de Gerenciamento de Riscos)** substituiu o antigo **PPRA (Programa de Prevenção de Riscos Ambientais)** desde 2022. O PGR é mais completo e focado no gerenciamento contínuo dos riscos.',
+        keywords: ['higiene ocupacional', 'avaliações ambientais', 'dosimetria', 'vibração', 'químicas', 'ibutg', 'luximetria'],
+        response: 'Sim, realizamos o gerenciamento completo da **Higiene Ocupacional**, que inclui avaliações ambientais quantitativas como Dosimetria de ruído, Avaliações Químicas, Vibração, medição de calor (IBUTG), Luximetria e outras.',
     },
     {
-        keywords: ['diferença pgr ltcat', 'pgr é o mesmo que ltcat'],
-        response: 'Ótima pergunta! O **PGR** tem foco prevencionista (legislação trabalhista) para gerenciar riscos e proteger os trabalhadores. Já o **LTCAT** tem foco previdenciário, para fins de aposentadoria especial. Ambos são muito importantes!',
+        keywords: ['pca', 'programa de proteção auditiva'],
+        response: 'O **PCA (Programa de Conservação Auditiva)** é um conjunto de ações para prevenir perdas auditivas em trabalhadores expostos a ruído. Ele está integrado ao PCMSO e inclui desde exames de audiometria até ações de conscientização.',
     },
     {
-        keywords: ['validade do pgr', 'renovar pgr'],
-        response: 'O **PGR** não tem uma "validade" fixa como o PPRA tinha. Ele é um processo de melhoria contínua. No entanto, ele deve ser revisado a cada **2 anos** (ou 3 para MEI/ME com grau de risco 1 e 2) ou sempre que ocorrerem mudanças no ambiente de trabalho.',
+        keywords: ['ppr', 'programa de proteção respiratória'],
+        response: 'O **PPR (Programa de Proteção Respiratória)** é fundamental para empresas com exposição a riscos respiratórios (poeiras, gases, etc.). Ele estabelece procedimentos para a seleção, uso e manutenção de respiradores adequados.',
     },
-     {
+    {
+        keywords: ['dds', 'diálogo diário de segurança'],
+        response: 'Sim, auxiliamos no desenvolvimento e acompanhamento do **DDS (Diálogo Diário de Segurança)**, uma ferramenta importante para reforçar a cultura de segurança no dia a dia da empresa.',
+    },
+    {
+        keywords: ['mapa de riscos', 'mapa de risco'],
+        response: 'Elaboramos e auxiliamos na divulgação do **Mapa de Riscos** por setor, uma representação gráfica que ajuda a identificar os riscos existentes nos locais de trabalho, conforme a NR-05.',
+    },
+    {
+        keywords: ['sipat', 'semana interna de prevenção'],
+        response: 'Oferecemos suporte completo na elaboração e acompanhamento da **SIPAT (Semana Interna de Prevenção de Acidentes do Trabalho)**, promovendo a conscientização sobre segurança e saúde.',
+    },
+    {
+        keywords: ['perícia', 'pericia judicial', 'acompanhamento de perícia'],
+        response: 'Sim, oferecemos o acompanhamento de perícias judiciais com nossos especialistas, tanto na área Médica quanto na de Engenharia de Segurança, para dar o suporte técnico necessário à sua empresa.',
+    },
+    {
+        keywords: ['terceirização', 'alocação de profissional', 'tst na empresa'],
+        response: 'Sim, oferecemos o serviço de **terceirização de profissionais**, como Técnico de Segurança do Trabalho, Técnico de Enfermagem, Médico do Trabalho e Fonoaudiólogo, para atuar diretamente na sua empresa.',
+    },
+    {
         keywords: ['cipa', 'comissão interna de prevenção de acidentes', 'eleição da cipa'],
         response: 'A **CIPA** é fundamental para a prevenção de acidentes. Nós oferecemos toda a assessoria para o processo eleitoral, registro, além do treinamento obrigatório para os membros eleitos, conforme a **NR-05**.',
     },
-
-    // === MEDICINA DO TRABALHO (PCMSO, ASO) ===
+    
+    // === MEDICINA DO TRABALHO ===
     {
         keywords: ['medicina', 'saúde ocupacional', 'médico do trabalho'],
         response: 'Na área de **Medicina do Trabalho**, nosso objetivo é promover e preservar a saúde dos seus colaboradores. O principal programa que gerenciamos é o **PCMSO**. Gostaria de saber mais sobre ele?',
@@ -157,25 +181,21 @@ const knowledgeBase: { keywords: string[]; response: string }[] = [
         response: 'O **exame de retorno ao trabalho** é necessário para todo funcionário que ficou afastado por 30 dias ou mais, por motivo de doença, acidente ou parto. Ele deve ser feito no primeiro dia da volta.',
     },
     {
-        keywords: ['exames complementares', 'audiometria', 'espirometria', 'sangue', 'visão'],
-        response: 'Sim, além do exame clínico, o PCMSO pode indicar **exames complementares** de acordo com os riscos da função, como **audiometria** (para ruído), **espirometria** (para poeiras), exames de sangue, entre outros.',
+        keywords: ['exames complementares', 'audiometria', 'espirometria', 'eeg', 'ecg', 'psicossocial', 'rx'],
+        response: 'Sim, o PCMSO pode indicar **exames complementares** de acordo com os riscos. Realizamos uma vasta gama, como **Audiometria**, **EEG**, **ECG**, **Espirometria**, **Acuidade Visual**, **Avaliação Psicossocial**, exames laboratoriais, **Raio-X** e outros.',
     },
     {
         keywords: ['agendar exame', 'marcar aso', 'onde faz o exame'],
         response: 'Para agendamento de exames, o contato de WhatsApp é (21) 99756-7806. Nossa equipe irá te ajudar a encontrar o melhor horário!',
     },
     {
-        keywords: ['pca', 'programa de conservação auditiva'],
-        response: 'O **PCA** é um conjunto de ações para prevenir perdas auditivas em trabalhadores expostos a ruído. Ele está integrado ao PCMSO e inclui desde exames de audiometria até ações de conscientização.',
-    },
-    {
-        keywords: ['ppr', 'programa de proteção respiratória'],
-        response: 'O **PPR** é fundamental para empresas com exposição a riscos respiratórios (poeiras, gases, etc.). Ele estabelece procedimentos para a seleção, uso e manutenção de respiradores.',
+        keywords: ['in loco', 'na minha empresa', 'atendimento na empresa'],
+        response: 'Sim, oferecemos a possibilidade de realizar os **Atestados de Saúde Ocupacional (ASO)** e exames clínicos diretamente na sua empresa (*in loco*), proporcionando mais comodidade e otimizando o tempo dos seus colaboradores.',
     },
 
     // === ESOCIAL SST ===
     {
-        keywords: ['esocial', 'sst', 'social', 'e-social'],
+        keywords: ['esocial', 'sst', 'social', 'e-social', 'gestão dos envios'],
         response: 'Sim, cuidamos de toda a **Gestão do eSocial SST**! Gerenciamos os envios dos eventos S-2210, S-2220 e S-2240 para garantir que sua empresa esteja sempre em conformidade com a lei e evite multas. Quer saber mais? [BOTÃO_WHATSAPP]',
     },
     {
@@ -190,43 +210,11 @@ const knowledgeBase: { keywords: string[]; response: string }[] = [
         keywords: ['s-2240', 'agentes nocivos', 'enviar pgr pro esocial', 'enviar ltcat'],
         response: 'O evento **S-2240** (Condições Ambientais do Trabalho - Agentes Nocivos) é crucial. Ele detalha a exposição dos trabalhadores a agentes nocivos, com base no LTCAT, e é fundamental para a aposentadoria especial.',
     },
-    {
-        keywords: ['multa esocial', 'não enviar esocial', 'perdi o prazo'],
-        response: 'A falta de envio ou o envio incorreto dos eventos de SST para o **eSocial** pode gerar **multas pesadas** para a empresa, aplicadas pela Receita Federal. É muito importante manter tudo em dia. Quer uma ajuda para regularizar? [BOTÃO_WHATSAPP]',
-    },
-    {
-        keywords: ['prazo para enviar esocial', 'quando enviar'],
-        response: 'Os prazos são importantes! O **S-2210 (CAT)** é até o próximo dia útil. Já o **S-2220 (ASO)** e o **S-2240 (Agentes Nocivos)** devem ser enviados até o dia 15 do mês seguinte à sua ocorrência.',
-    },
-    {
-        keywords: ['minha empresa precisa enviar esocial', 'mei precisa de esocial'],
-        response: 'Sim, a obrigatoriedade do **eSocial SST** vale para **todas** as empresas que possuem empregados, inclusive MEI (com funcionário), microempresas e empresas de pequeno porte. Não deixe para a última hora!',
-    },
 
     // === TREINAMENTOS E NRs ===
     {
-        keywords: ['treinamentos', 'nr', 'normas regulamentadoras', 'curso', 'capacitação'],
-        response: 'Oferecemos diversos **treinamentos para NRs**, como NR-05 (CIPA), NR-06 (EPIs), NR-33 (Espaços Confinados) e NR-35 (Trabalho em Altura). Capacitar sua equipe é fundamental para a segurança de todos!',
-    },
-    {
-        keywords: ['nr-01', 'gro', 'disposições gerais'],
-        response: 'O treinamento da **NR-01** é a base de tudo. Ele apresenta as disposições gerais sobre o Gerenciamento de Riscos Ocupacionais (GRO), que é o conceito por trás do PGR.',
-    },
-    {
-        keywords: ['nr-05', 'cipa'],
-        response: 'O treinamento para a **CIPA (Comissão Interna de Prevenção de Acidentes)**, da NR-05, é obrigatório para os membros da comissão. Ele aborda a prevenção de acidentes e doenças no trabalho.',
-    },
-    {
-        keywords: ['nr-06', 'epi', 'equipamento de proteção individual', 'curso de epi'],
-        response: 'O treinamento da **NR-06** é sobre o uso correto, guarda e conservação dos **EPIs (Equipamentos de Proteção Individual)**. É essencial para garantir que os equipamentos sejam eficazes.',
-    },
-    {
-        keywords: ['nr-10', 'eletricidade', 'segurança em instalações elétricas'],
-        response: 'A **NR-10** é voltada para a segurança em instalações e serviços em eletricidade. Oferecemos o treinamento básico e também o complementar (SEP) para alta tensão.',
-    },
-    {
-        keywords: ['nr-11', 'nr-12', 'ponte rolante', 'empilhadeira', 'máquinas e equipamentos'],
-        response: 'Sim, ministramos treinamentos para operadores de **empilhadeira** e **ponte rolante** (conforme NR-11), além de capacitações sobre os princípios de segurança em **máquinas e equipamentos** (NR-12).',
+        keywords: ['treinamentos', 'nr', 'normas regulamentadoras', 'curso', 'capacitação', 'palestras'],
+        response: 'Oferecemos diversos **treinamentos e palestras para NRs**, como NR-01, NR-05 (CIPA), NR-06 (EPIs), NR-11, NR-12, NR-23, NR-33 (Espaços Confinados) e NR-35 (Trabalho em Altura). Capacitar sua equipe é fundamental!',
     },
     {
         keywords: ['nr-33', 'espaço confinado'],
@@ -235,14 +223,6 @@ const knowledgeBase: { keywords: string[]; response: string }[] = [
     {
         keywords: ['nr-35', 'trabalho em altura'],
         response: 'O treinamento da **NR-35** é obrigatório para qualquer trabalho executado acima de 2 metros do nível inferior, onde haja risco de queda. A segurança em altura é uma prioridade absoluta!',
-    },
-    {
-        keywords: ['treinamento presencial ou online', 'modalidade do curso'],
-        response: 'A modalidade do treinamento (presencial, semipresencial ou online) depende da norma. Alguns, como NR-33 e NR-35, exigem parte prática presencial. Nos consulte sobre o curso que você precisa!',
-    },
-    {
-        keywords: ['certificado', 'validade do treinamento'],
-        response: 'Sim, todos os nossos treinamentos emitem **certificado de conclusão** válido em todo o território nacional. A validade do certificado varia de acordo com cada NR, geralmente sendo de 1 ou 2 anos.',
     },
 
     // === COMERCIAL E PROCESSOS ===
@@ -254,19 +234,11 @@ const knowledgeBase: { keywords: string[]; response: string }[] = [
         keywords: ['pequena empresa', 'mei', 'poucos funcionários', 'microempresa'],
         response: 'Com certeza! Atendemos empresas de **todos os portes**, desde MEI e pequenas empresas até grandes corporações. Nossas soluções são personalizadas para a sua necessidade.',
     },
-    {
-        keywords: ['como funciona', 'processo de contratação', 'primeiros passos'],
-        response: 'O processo é simples! Primeiro, conversamos para entender as necessidades da sua empresa. Depois, montamos uma **proposta personalizada**. Após a aprovação, agendamos as visitas técnicas e os exames necessários. Tudo de forma rápida e organizada!',
-    },
-    {
-        keywords: ['pagamento', 'forma de pagamento', 'boleto', 'pix'],
-        response: 'Nossa equipe comercial pode te passar todas as informações sobre as formas de pagamento. Fale com eles pelo WhatsApp, é rapidinho! [BOTÃO_WHATSAPP]',
-    },
 
     // === DÚVIDAS FREQUENTES ADICIONAIS ===
     {
         keywords: ['ppp', 'perfil profissiográfico previdenciário'],
-        response: 'O **PPP (Perfil Profissiográfico Previdenciário)** é um documento histórico-laboral do trabalhador. Nós fornecemos as informações técnicas, com base no LTCAT, para que sua empresa possa preenchê-lo corretamente.',
+        response: 'O **PPP (Perfil Profissiográfico Previdenciário)** é um documento histórico-laboral do trabalhador. Nós fornecemos as informações técnicas, com base no LTCAT, e a orientação necessária para que sua empresa possa preenchê-lo corretamente.',
     },
 ];
 

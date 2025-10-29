@@ -4,16 +4,16 @@ export const QualymedLogoIcon: React.FC<{ className?: string }> = ({ className =
     <svg xmlns="http://www.w3.org/2000/svg" className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round">
         {/* Clipboard Body */}
         <path d="M17 21.5H7a2 2 0 0 1-2-2V4.5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2V18l-3.5 3.5z" />
-        {/* Folded Corner Line */}
-        <polyline points="15.5 18 15.5 21.5 19 21.5" />
+        {/* Folded Corner Line (Made sharper/more explicit) */}
+        <polyline points="19 18 15.5 18 15.5 21.5" />
         
         {/* Clip */}
         <path d="M15 4.5h-6a1 1 0 0 0-1 1v1h8v-1a1 1 0 0 0-1-1z" />
         <circle cx="12" cy="2.5" r="0.5" fill="currentColor" strokeWidth="0" />
 
-        {/* Pulse Line & Circle */}
-        <polyline points="7 14 9.5 14 11 10 13 17 15 12.5 17 12.5" />
-        <circle cx="18" cy="12.5" r="1" />
+        {/* Pulse Line & Circle (Circle moved away from edge) */}
+        <polyline points="7 14 9.5 14 11 10 13 17 15 12.5 16 12.5" />
+        <circle cx="17" cy="12.5" r="1" />
     </svg>
 );
 
