@@ -92,7 +92,7 @@ const knowledgeBase: { keywords: string[]; response: string }[] = [
     },
     {
         keywords: ['pgr', 'programa de gerenciamento de riscos'],
-        response: 'O **PGR (Programa de Gerenciamento de Riscos)** é um documento obrigatório (NR-01) que substituiu o PPRA. Ele inclui o **Inventário de Riscos** e o **Plano de Ação** para tornar o ambiente de trabalho mais seguro.',
+        response: 'O **PGR (Programa de Gerenciamento de Riscos)** é o documento principal de segurança (NR-01). Ele inclui o Inventário de Riscos e o Plano de Ação. Nós também realizamos o acompanhamento do cronograma de ações para garantir que tudo seja implementado.',
     },
     {
         keywords: ['ltcat', 'laudo técnico das condições do ambiente de trabalho'],
@@ -122,6 +122,10 @@ const knowledgeBase: { keywords: string[]; response: string }[] = [
         keywords: ['ppr', 'programa de proteção respiratória'],
         response: 'O **PPR (Programa de Proteção Respiratória)** é fundamental para empresas com exposição a riscos respiratórios (poeiras, gases, etc.). Ele estabelece procedimentos para a seleção, uso e manutenção de respiradores adequados.',
     },
+     {
+        keywords: ['apr', 'análise preliminar de risco'],
+        response: 'A **APR (Análise Preliminar de Risco)** é uma ferramenta que utilizamos para identificar e mitigar riscos em tarefas específicas antes que elas comecem. É essencial para atividades não rotineiras.'
+    },
     {
         keywords: ['dds', 'diálogo diário de segurança'],
         response: 'Sim, auxiliamos no desenvolvimento e acompanhamento do **DDS (Diálogo Diário de Segurança)**, uma ferramenta importante para reforçar a cultura de segurança no dia a dia da empresa.',
@@ -133,6 +137,14 @@ const knowledgeBase: { keywords: string[]; response: string }[] = [
     {
         keywords: ['sipat', 'semana interna de prevenção'],
         response: 'Oferecemos suporte completo na elaboração e acompanhamento da **SIPAT (Semana Interna de Prevenção de Acidentes do Trabalho)**, promovendo a conscientização sobre segurança e saúde.',
+    },
+    {
+        keywords: ['epi', 'equipamento de proteção', 'ficha de epi'],
+        response: 'Sim, fornecemos orientação legal completa sobre a entrega de EPIs (Equipamentos de Proteção Individual), incluindo o controle e o registro em fichas, conforme a NR-06.'
+    },
+    {
+        keywords: ['inspeção', 'visita técnica', 'relatório de segurança'],
+        response: 'Realizamos inspeções periódicas (semanais, quinzenais ou mensais) na sua empresa, com envio de relatórios detalhados para acompanhar a implementação do PGR e garantir a conformidade contínua.'
     },
     {
         keywords: ['perícia', 'pericia judicial', 'acompanhamento de perícia'],
@@ -157,8 +169,8 @@ const knowledgeBase: { keywords: string[]; response: string }[] = [
         response: 'O **PCMSO (Programa de Controle Médico de Saúde Ocupacional)** é um programa obrigatório (NR-07) que estabelece os **exames médicos** (admissionais, periódicos, etc.) que cada funcionário deve realizar para monitorar sua saúde.',
     },
     {
-        keywords: ['aso', 'atestado de saúde ocupacional', 'exame ocupacional'],
-        response: 'O **ASO (Atestado de Saúde Ocupacional)** é o documento emitido após cada exame médico previsto no PCMSO. Ele atesta se o funcionário está **apto ou inapto** para exercer sua função.',
+        keywords: ['aso', 'atestado', 'atestados', 'atestado de saúde ocupacional', 'exame ocupacional'],
+        response: 'O **ASO (Atestado de Saúde Ocupacional)** é o documento que atesta se o funcionário está apto ou inapto para a função. Nós realizamos a emissão dos ASOs para todos os tipos de exames (admissionais, periódicos, etc.) e oferecemos a comodidade de realizá-los **in loco (na sua empresa)** ou em nossas unidades.',
     },
     {
         keywords: ['exame admissional', 'exame para contratar'],
@@ -192,11 +204,15 @@ const knowledgeBase: { keywords: string[]; response: string }[] = [
         keywords: ['in loco', 'na minha empresa', 'atendimento na empresa'],
         response: 'Sim, oferecemos a possibilidade de realizar os **Atestados de Saúde Ocupacional (ASO)** e exames clínicos diretamente na sua empresa (*in loco*), proporcionando mais comodidade e otimizando o tempo dos seus colaboradores.',
     },
+    {
+        keywords: ['concurso', 'exame para concurso', 'avaliação para curso'],
+        response: 'Sim, realizamos **Avaliações Clínicas** e emitimos atestados para candidatos de concursos públicos e para a matrícula em cursos em geral.'
+    },
 
     // === ESOCIAL SST ===
     {
         keywords: ['esocial', 'sst', 'social', 'e-social', 'gestão dos envios'],
-        response: 'Sim, cuidamos de toda a **Gestão do eSocial SST**! Gerenciamos os envios dos eventos S-2210, S-2220 e S-2240 para garantir que sua empresa esteja sempre em conformidade com a lei e evite multas. Quer saber mais? [BOTÃO_WHATSAPP]',
+        response: 'Sim, cuidamos de toda a **Gestão do eSocial SST**! Gerenciamos os envios dos eventos **S-2210** (CAT), **S-2220** (ASO), **S-2221** (Toxicológico) e **S-2240** (Agentes Nocivos) para garantir que sua empresa esteja sempre em conformidade e evite multas. Quer saber mais? [BOTÃO_WHATSAPP]',
     },
     {
         keywords: ['s-2210', 'cat', 'comunicação de acidente', 'acidente de trabalho'],
@@ -214,7 +230,7 @@ const knowledgeBase: { keywords: string[]; response: string }[] = [
     // === TREINAMENTOS E NRs ===
     {
         keywords: ['treinamentos', 'nr', 'normas regulamentadoras', 'curso', 'capacitação', 'palestras'],
-        response: 'Oferecemos diversos **treinamentos e palestras para NRs**, como NR-01, NR-05 (CIPA), NR-06 (EPIs), NR-11, NR-12, NR-23, NR-33 (Espaços Confinados) e NR-35 (Trabalho em Altura). Capacitar sua equipe é fundamental!',
+        response: 'Oferecemos diversos **treinamentos, cursos e palestras**, tanto para NRs de segurança (NR-01, NR-05 CIPA, NR-06 EPI, NR-33, NR-35, etc.) quanto para temas de saúde, como primeiros socorros e ergonomia. Capacitar sua equipe é fundamental!',
     },
     {
         keywords: ['nr-33', 'espaço confinado'],
