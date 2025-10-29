@@ -90,7 +90,7 @@ const Hero: React.FC = () => {
 
         <div className="container mx-auto px-6 h-full flex flex-col justify-center items-center relative z-10 text-center">
             <div>
-                <h1 className="text-4xl md:text-6xl font-extrabold leading-tight mb-4 animate-fade-in-down h-28 md:h-40 flex flex-col justify-center items-center">
+                <h1 className="text-4xl md:text-6xl font-extrabold leading-tight mb-8 animate-fade-in-down h-28 md:h-40 flex flex-col justify-center items-center">
                     <span>Soluções completas em</span>
                     <span className="text-cyan-400 whitespace-nowrap border-r-4 border-cyan-400 animate-blink pr-1 min-h-[1.2em]">{text}</span>
                     <span>para o seu negócio.</span>
@@ -99,10 +99,10 @@ const Hero: React.FC = () => {
                     Somos uma empresa inovadora, com profissionais especializados em Medicina e Segurança do Trabalho, prontos para atender de forma individualizada a sua empresa.
                 </p>
                 <div className="flex justify-center space-x-4 animate-fade-in-up">
-                    <a href="https://wa.me/5521995607848" target="_blank" rel="noopener noreferrer" className="bg-cyan-600 text-white font-bold py-3 px-8 rounded-full hover:bg-cyan-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 text-lg">
+                    <a href="https://wa.me/5521995607848" target="_blank" rel="noopener noreferrer" className="bg-cyan-600 text-white font-bold py-3 px-8 rounded-full hover:bg-cyan-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 text-base md:text-lg">
                         Solicitar Proposta
                     </a>
-                    <a href="#services" onClick={(e) => handleSmoothScroll(e, '#services')} className="bg-white text-cyan-600 font-bold py-3 px-8 rounded-full hover:bg-gray-100 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 text-lg">
+                    <a href="#services" onClick={(e) => handleSmoothScroll(e, '#services')} className="bg-white text-cyan-600 font-bold py-3 px-8 rounded-full hover:bg-gray-100 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 text-base md:text-lg">
                         Nossos Serviços
                     </a>
                 </div>
