@@ -1,18 +1,22 @@
 import React from 'react';
 
 export const QualymedLogoIcon: React.FC<{ className?: string }> = ({ className = "w-10 h-10" }) => (
-    <svg xmlns="http://www.w3.org/2000/svg" className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-        {/* Clipboard main body */}
-        <path d="M9 5H7a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-2" />
-         {/* Clip */}
-        <path d="M15 5a3 3 0 0 0-6 0" />
-        {/* Pulse line with circle */}
-        <path d="M7 14l2-4 2 6 2-4 1.5 3H16" />
-        <circle cx="17" cy="14" r="1" fill="currentColor" stroke="none" />
-         {/* Folded corner */}
-         <path d="M19 21l-4-4h4v4z" />
+    <svg xmlns="http://www.w3.org/2000/svg" className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round">
+        {/* Clipboard Body */}
+        <path d="M17 21.5H7a2 2 0 0 1-2-2V4.5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2V18l-3.5 3.5z" />
+        {/* Folded Corner Line */}
+        <polyline points="15.5 18 15.5 21.5 19 21.5" />
+        
+        {/* Clip */}
+        <path d="M15 4.5h-6a1 1 0 0 0-1 1v1h8v-1a1 1 0 0 0-1-1z" />
+        <circle cx="12" cy="2.5" r="0.5" fill="currentColor" strokeWidth="0" />
+
+        {/* Pulse Line & Circle */}
+        <polyline points="7 14 9.5 14 11 10 13 17 15 12.5 17 12.5" />
+        <circle cx="18" cy="12.5" r="1" />
     </svg>
 );
+
 
 export const EngineeringSafetyIcon: React.FC<{ className?: string }> = ({ className = "w-12 h-12" }) => (
     <svg xmlns="http://www.w3.org/2000/svg" className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
