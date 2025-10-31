@@ -27,7 +27,7 @@ const servicesData: Service[] = [
 ];
 
 const ServiceCard: React.FC<Service> = ({ icon, title, description }) => (
-    <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-transform duration-300 ease-in-out h-full text-center">
+    <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl hover:-translate-y-2 hover:scale-105 transition-transform duration-300 ease-in-out h-full text-center">
         <div className="inline-block text-cyan-600 mb-4">{icon}</div>
         <h3 className="text-2xl font-bold text-gray-800 mb-2">{title}</h3>
         <p className="text-gray-600">{description}</p>
