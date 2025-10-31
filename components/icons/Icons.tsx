@@ -23,9 +23,12 @@ export const QualymedLogoIcon: React.FC<{ className?: string }> = ({ className =
 
 export const EngineeringSafetyIcon: React.FC<{ className?: string }> = ({ className = "w-12 h-12" }) => (
     <svg xmlns="http://www.w3.org/2000/svg" className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-        <circle cx="12" cy="12" r="3"/>
-        <path d="M12 8v1m0 6v1m3.5-3.5h-1m-6 0H7m5.5-2.5l-.7.7m-4.6 4.6l-.7.7m6.1-6.1l.7.7m-6.2-6.2l.7.7"/>
+        {/* Hard Hat */}
+        <path d="M2 13.5A2.5 2.5 0 0 1 4.5 11h15a2.5 2.5 0 0 1 2.5 2.5V17a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-3.5z"/>
+        <path d="M12 11V3.5a2.5 2.5 0 0 1 2.5-2.5h0A2.5 2.5 0 0 1 17 3.5V11"/>
+        {/* Gear */}
+        <circle cx="12" cy="16" r="2"/>
+        <path d="M12 13.5v.5m0 4v.5m2.5-2.5h.5m-6 0h.5m2-1.5l-.7.7m-2.6 2.6l-.7.7m4.4-4.4l.7.7m-4.4-4.4l.7.7"/>
     </svg>
 );
 
