@@ -28,11 +28,11 @@ const knowledgeBase: { keywords: string[]; response: string }[] = [
     // === INFORMAÇÕES GERAIS SOBRE A QUALYMED ===
     {
         keywords: ['quem são', 'sobre a qualymed', 'o que é a qualymed', 'fale sobre a empresa'],
-        response: 'Somos a **Qualymed**, uma empresa inovadora com profissionais especializados em Saúde e Segurança do Trabalho. Nossa equipe tem grande experiência e está preparada para atender sua empresa de forma individualizada, com foco na gestão preventiva de riscos.',
+        response: 'Somos a **Qualymed**, especialistas em Saúde e Segurança do Trabalho. Ajudamos empresas com uma gestão de riscos preventiva e atendimento individualizado.',
     },
      {
         keywords: ['missão', 'propósito', 'qual a missão'],
-        response: 'Nossa missão é ajudar os negócios a se tornarem mais sustentáveis, prósperos e seguros, garantindo a perenidade das empresas através da **gestão preventiva dos riscos ocupacionais**. Buscamos ser referência com credibilidade e confiança.',
+        response: 'Nossa missão é tornar os negócios mais seguros e sustentáveis através da **gestão preventiva de riscos ocupacionais**, com credibilidade e confiança.',
     },
     {
         keywords: ['visão', 'futuro da empresa', 'qual a visão'],
@@ -44,11 +44,11 @@ const knowledgeBase: { keywords: string[]; response: string }[] = [
     },
     {
         keywords: ['serviços', 'fazem', 'oferecem', 'trabalham', 'atuação'],
-        response: 'Oferecemos soluções completas com conteúdo técnico e humano, visando não apenas os aspectos legais, mas a saúde global dos colaboradores. Nossos principais serviços são **Engenharia de Segurança**, **Medicina do Trabalho**, **Gestão eSocial SST** e **Treinamentos de NRs**. Sobre qual deles você gostaria de saber mais?',
+        response: 'Oferecemos soluções completas em **Engenharia de Segurança**, **Medicina do Trabalho**, **Gestão eSocial SST** e **Treinamentos de NRs**, focando na saúde global e conformidade legal. Sobre qual serviço você gostaria de saber mais?',
     },
     {
         keywords: ['diferencial', 'por que escolher', 'vantagem'],
-        response: 'Nosso maior diferencial é a **parceria**. Não apenas entregamos documentos, nós oferecemos uma gestão completa e consultiva, usando **tecnologia** e **atendimento personalizado** para garantir o sucesso do seu negócio.',
+        response: 'Nosso maior diferencial é a **parceria**. Não apenas entregamos documentos, oferecemos uma gestão completa e consultiva, usando **tecnologia** e **atendimento personalizado** para garantir o sucesso do seu negócio.',
     },
     {
         keywords: ['endereço', 'localização', 'onde ficam', 'unidade', 'ir até aí'],
@@ -66,33 +66,33 @@ const knowledgeBase: { keywords: string[]; response: string }[] = [
     // === DÚVIDAS INICIAIS (LEIGAS) ===
     {
         keywords: ['documento de segurança', 'papelada da empresa', 'documentação obrigatória', 'o que minha empresa precisa'],
-        response: 'Entendo perfeitamente! Toda empresa precisa de alguns documentos básicos de SST. Os principais são o **PGR** (Programa de Gerenciamento de Riscos) e o **PCMSO** (Programa de Controle Médico de Saúde Ocupacional). Nós cuidamos de tudo isso para você!',
+        response: 'Toda empresa precisa de documentos básicos de SST, como o **PGR** (Programa de Gerenciamento de Riscos) e o **PCMSO** (Programa de Controle Médico de Saúde Ocupacional). Nós cuidamos de tudo isso para você!',
     },
     {
         keywords: ['exame de funcionário', 'tenho que fazer exame nos funcionários', 'exame para contratar'],
-        response: 'Sim, é obrigatório! O **exame admissional** é fundamental antes de contratar. Além dele, existem os **periódicos**, **demissionais**, entre outros. Todos eles são gerenciados pelo **PCMSO**, um programa que nós elaboramos para sua empresa.',
+        response: 'Sim, os exames ocupacionais são obrigatórios. O **exame admissional** é feito antes da contratação, mas também existem os periódicos, demissionais, etc. Todos são gerenciados pelo **PCMSO**, que elaboramos para sua empresa.',
     },
     {
         keywords: ['papel para o inss', 'documento de aposentadoria', 'laudo para se aposentar'],
-        response: 'Você provavelmente está falando do **LTCAT** ou do **PPP**. O **LTCAT** é o laudo que avalia as condições do ambiente de trabalho, e o **PPP** é o Perfil Profissiográfico Previdenciário do funcionário. Nós elaboramos o LTCAT, que é a base para tudo!',
+        response: 'Para fins de aposentadoria junto ao INSS, os documentos chave são o **LTCAT** e o **PPP**. Nós elaboramos o **LTCAT**, que é o laudo técnico que serve de base para o PPP do funcionário.',
     },
     {
         keywords: ['curso de segurança', 'treinamento obrigatório', 'dar curso para funcionário'],
-        response: 'Sim, muitos treinamentos são obrigatórios! Eles são baseados nas **Normas Regulamentadoras (NRs)**. Oferecemos vários, como o de **trabalho em altura (NR-35)**, **uso de EPIs (NR-06)** e muitos outros. Qual você precisa?',
+        response: 'Sim, os treinamentos baseados nas **Normas Regulamentadoras (NRs)** são obrigatórios. Oferecemos capacitações para **trabalho em altura (NR-35)**, **uso de EPIs (NR-06)**, e muitas outras. Qual NR você precisa atender?',
     },
     {
         keywords: ['evitar multa', 'fiscalização do trabalho', 'deixar a empresa em dia'],
-        response: 'Ótima preocupação! Para evitar multas e ficar em dia, sua empresa precisa ter a gestão de SST completa: **PGR**, **PCMSO**, **LTCAT**, **envios para o eSocial** e **treinamentos**. Nós somos especialistas em deixar tudo 100% regularizado para você. Quer começar? [BOTÃO_WHATSAPP]',
+        response: 'Para evitar multas e manter sua empresa em dia, é essencial ter a gestão de SST completa: **PGR**, **PCMSO**, **LTCAT**, envios para o **eSocial** e **treinamentos**. Somos especialistas em regularizar tudo para você. Vamos começar? [BOTÃO_WHATSAPP]',
     },
 
     // === ENGENHARIA DE SEGURANÇA ===
     {
         keywords: ['engenharia', 'segurança'],
-        response: 'Claro! Em **Engenharia de Segurança**, nosso foco é identificar, avaliar e controlar os riscos no ambiente de trabalho. Elaboramos documentos essenciais como o **PGR**, **LTCAT**, Laudos, AET e muito mais. O que você precisa?',
+        response: 'Em **Engenharia de Segurança**, nosso foco é controlar os riscos no ambiente de trabalho. Elaboramos documentos essenciais como **PGR**, **LTCAT**, Laudos de Insalubridade/Periculosidade, AET e mais. Qual sua necessidade?',
     },
     {
         keywords: ['pgr', 'programa de gerenciamento de riscos'],
-        response: 'O **PGR (Programa de Gerenciamento de Riscos)** é o documento principal de segurança (NR-01). Ele inclui o Inventário de Riscos e o Plano de Ação. Nós também realizamos o acompanhamento do cronograma de ações para garantir que tudo seja implementado.',
+        response: 'O **PGR (Programa de Gerenciamento de Riscos)** é o principal documento de segurança (NR-01). Ele inclui o Inventário de Riscos e o Plano de Ação, e nós acompanhamos sua implementação para garantir a eficácia.',
     },
     {
         keywords: ['ltcat', 'laudo técnico das condições do ambiente de trabalho'],
@@ -100,69 +100,69 @@ const knowledgeBase: { keywords: string[]; response: string }[] = [
     },
     {
         keywords: ['insalubridade', 'laudo de insalubridade'],
-        response: 'O **Laudo de Insalubridade** (baseado na NR-15) avalia se o ambiente de trabalho expõe os funcionários a agentes nocivos acima dos limites de tolerância, o que pode gerar o direito ao **adicional de insalubridade**.',
+        response: 'O **Laudo de Insalubridade** (NR-15) avalia se o ambiente expõe os funcionários a agentes nocivos acima dos limites, o que pode gerar o direito ao **adicional de insalubridade**.',
     },
     {
         keywords: ['periculosidade', 'laudo de periculosidade'],
-        response: 'O **Laudo de Periculosidade** (baseado na NR-16) identifica atividades ou operações perigosas, como trabalho com explosivos, inflamáveis ou eletricidade, que garantem o **adicional de periculosidade** ao trabalhador.',
+        response: 'O **Laudo de Periculosidade** (NR-16) identifica atividades perigosas (com inflamáveis, eletricidade, etc.) que garantem o **adicional de periculosidade** ao trabalhador.',
     },
     {
         keywords: ['aet', 'análise ergonômica', 'ergonomia', 'nr-17', 'laudo ergonômico'],
-        response: 'A **AET (Análise Ergonômica do Trabalho)**, exigida pela NR-17, avalia a adaptação das condições de trabalho às características psicofisiológicas dos trabalhadores, visando conforto, segurança e desempenho eficiente.',
+        response: 'A **AET (Análise Ergonômica do Trabalho)**, exigida pela NR-17, avalia a adaptação das condições de trabalho aos trabalhadores, visando conforto, segurança e desempenho.',
     },
     {
         keywords: ['higiene ocupacional', 'avaliações ambientais', 'dosimetria', 'vibração', 'químicas', 'ibutg', 'luximetria'],
-        response: 'Sim, realizamos o gerenciamento completo da **Higiene Ocupacional**, que inclui avaliações ambientais quantitativas como Dosimetria de ruído, Avaliações Químicas, Vibração, medição de calor (IBUTG), Luximetria e outras.',
+        response: 'Sim, gerenciamos a **Higiene Ocupacional** com avaliações ambientais quantitativas de ruído (Dosimetria), agentes químicos, vibração, calor (IBUTG), entre outras.',
     },
     {
         keywords: ['pca', 'programa de proteção auditiva'],
-        response: 'O **PCA (Programa de Conservação Auditiva)** é um conjunto de ações para prevenir perdas auditivas em trabalhadores expostos a ruído. Ele está integrado ao PCMSO e inclui desde exames de audiometria até ações de conscientização.',
+        response: 'O **PCA (Programa de Conservação Auditiva)** previne perdas auditivas em trabalhadores expostos a ruído. É integrado ao PCMSO e inclui desde audiometrias até ações de conscientização.',
     },
     {
         keywords: ['ppr', 'programa de proteção respiratória'],
-        response: 'O **PPR (Programa de Proteção Respiratória)** é fundamental para empresas com exposição a riscos respiratórios (poeiras, gases, etc.). Ele estabelece procedimentos para a seleção, uso e manutenção de respiradores adequados.',
+        response: 'O **PPR (Programa de Proteção Respiratória)** define procedimentos para seleção, uso e manutenção de respiradores em ambientes com poeiras, gases, etc.',
     },
      {
         keywords: ['apr', 'análise preliminar de risco'],
-        response: 'A **APR (Análise Preliminar de Risco)** é uma ferramenta que utilizamos para identificar e mitigar riscos em tarefas específicas antes que elas comecem. É essencial para atividades não rotineiras.'
+        response: 'A **APR (Análise Preliminar de Risco)** é uma ferramenta para identificar e mitigar riscos em tarefas específicas antes de seu início, especialmente as não rotineiras.',
     },
     {
         keywords: ['dds', 'diálogo diário de segurança'],
-        response: 'Sim, auxiliamos no desenvolvimento e acompanhamento do **DDS (Diálogo Diário de Segurança)**, uma ferramenta importante para reforçar a cultura de segurança no dia a dia da empresa.',
+        response: 'Sim, auxiliamos no desenvolvimento do **DDS (Diálogo Diário de Segurança)**, uma ferramenta importante para reforçar a cultura de segurança na sua empresa.',
     },
     {
         keywords: ['mapa de riscos', 'mapa de risco'],
-        response: 'Elaboramos e auxiliamos na divulgação do **Mapa de Riscos** por setor, uma representação gráfica que ajuda a identificar os riscos existentes nos locais de trabalho, conforme a NR-05.',
+        response: 'Elaboramos o **Mapa de Riscos** por setor (NR-05), uma representação gráfica que ajuda os colaboradores a identificarem os riscos em seus locais de trabalho.',
     },
     {
         keywords: ['sipat', 'semana interna de prevenção'],
-        response: 'Oferecemos suporte completo na elaboração e acompanhamento da **SIPAT (Semana Interna de Prevenção de Acidentes do Trabalho)**, promovendo a conscientização sobre segurança e saúde.',
+        response: 'Oferecemos suporte completo na organização da **SIPAT (Semana Interna de Prevenção de Acidentes do Trabalho)**, promovendo a conscientização sobre segurança e saúde.',
     },
     {
         keywords: ['epi', 'equipamento de proteção', 'ficha de epi'],
-        response: 'Sim, fornecemos orientação legal completa sobre a entrega de EPIs (Equipamentos de Proteção Individual), incluindo o controle e o registro em fichas, conforme a NR-06.'
+        response: 'Fornecemos orientação completa sobre a gestão de **EPIs (Equipamentos de Proteção Individual)**, incluindo o controle e o registro em fichas, conforme a NR-06.',
     },
     {
         keywords: ['inspeção', 'visita técnica', 'relatório de segurança'],
-        response: 'Realizamos inspeções periódicas (semanais, quinzenais ou mensais) na sua empresa, com envio de relatórios detalhados para acompanhar a implementação do PGR e garantir a conformidade contínua.'
+        response: 'Realizamos inspeções de segurança periódicas na sua empresa, com relatórios detalhados para acompanhar a implementação do PGR e garantir a conformidade contínua.'
     },
     {
         keywords: ['perícia', 'pericia judicial', 'acompanhamento de perícia'],
-        response: 'Sim, oferecemos o acompanhamento de perícias judiciais com nossos especialistas, tanto na área Médica quanto na de Engenharia de Segurança, para dar o suporte técnico necessário à sua empresa.',
+        response: 'Sim, oferecemos o acompanhamento de perícias judiciais com nossos especialistas, dando o suporte técnico necessário à sua empresa nas áreas Médica e de Engenharia.',
     },
     {
         keywords: ['terceirização', 'alocação de profissional', 'tst na empresa'],
-        response: 'Sim, oferecemos o serviço de **terceirização de profissionais**, como Técnico de Segurança do Trabalho, Técnico de Enfermagem, Médico do Trabalho e Fonoaudiólogo, para atuar diretamente na sua empresa.',
+        response: 'Sim, oferecemos o serviço de **terceirização de profissionais** de SST, como Técnico de Segurança, Médico do Trabalho, entre outros, para atuar diretamente na sua empresa.',
     },
     {
         keywords: ['cipa', 'comissão interna de prevenção de acidentes', 'eleição da cipa'],
-        response: 'A **CIPA** é fundamental para a prevenção de acidentes. Nós oferecemos toda a assessoria para o processo eleitoral, registro, além do treinamento obrigatório para os membros eleitos, conforme a **NR-05**.',
+        response: 'A **CIPA (NR-05)** é fundamental para a prevenção de acidentes. Oferecemos assessoria completa para o processo eleitoral, registro e treinamento obrigatório dos membros.',
     },
     
     // === MEDICINA DO TRABALHO ===
     {
         keywords: ['medicina', 'saúde ocupacional', 'médico do trabalho'],
-        response: 'Na área de **Medicina do Trabalho**, nosso objetivo é promover e preservar a saúde dos seus colaboradores. O principal programa que gerenciamos é o **PCMSO**. Gostaria de saber mais sobre ele?',
+        response: 'Em **Medicina do Trabalho**, nosso foco é preservar a saúde dos colaboradores. O programa central é o **PCMSO (NR-07)**. Gostaria de saber mais sobre ele?',
     },
     {
         keywords: ['pcmso', 'programa de controle médico', 'o que é pcmso'],
@@ -170,31 +170,31 @@ const knowledgeBase: { keywords: string[]; response: string }[] = [
     },
     {
         keywords: ['aso', 'atestado', 'atestados', 'atestado de saúde ocupacional', 'exame ocupacional'],
-        response: 'O **ASO (Atestado de Saúde Ocupacional)** é o documento que atesta se o funcionário está apto ou inapto para a função. Nós realizamos a emissão dos ASOs para todos os tipos de exames (admissionais, periódicos, etc.) e oferecemos a comodidade de realizá-los **in loco (na sua empresa)** ou em nossas unidades.',
+        response: 'O **ASO (Atestado de Saúde Ocupacional)** é o documento que atesta a aptidão do funcionário para a função. Emitimos ASOs para todos os tipos de exames e podemos realizá-los **na sua empresa (in loco)** para maior comodidade.',
     },
     {
         keywords: ['exame admissional', 'exame para contratar'],
-        response: 'O **exame admissional** deve ser realizado **antes** que o trabalhador assuma suas atividades. Ele é essencial para garantir que o novo colaborador está apto para a função.',
+        response: 'O **exame admissional** é obrigatório e deve ser feito **antes** do início das atividades para garantir que o novo colaborador está apto para a função.',
     },
     {
         keywords: ['exame demissional', 'exame para sair da empresa'],
-        response: 'O **exame demissional** é obrigatório e deve ser realizado em até **10 dias** contados a partir do término do contrato de trabalho, para avaliar as condições de saúde do colaborador no desligamento.',
+        response: 'O **exame demissional** é obrigatório e deve ser feito em até **10 dias** após o fim do contrato, para avaliar a saúde do colaborador no desligamento.',
     },
     {
         keywords: ['exame periódico', 'exame anual'],
-        response: 'O **exame periódico** é realizado em intervalos definidos pelo **PCMSO** (geralmente anual ou bienal), para monitorar a saúde do trabalhador ao longo do tempo.',
+        response: 'O **exame periódico** é realizado em intervalos definidos no **PCMSO** (geralmente anual ou bienal), para monitorar a saúde dos trabalhadores ao longo do tempo.',
     },
     {
         keywords: ['mudança de risco', 'mudança de função', 'exame de mudança'],
-        response: 'Sim, existe o **exame de mudança de risco ocupacional**. Ele é obrigatório sempre que um funcionário for transferido para uma função com exposição a riscos diferentes.',
+        response: 'O **exame de mudança de risco ocupacional** é obrigatório sempre que um funcionário for transferido para uma função com exposição a riscos diferentes da anterior.',
     },
     {
         keywords: ['retorno ao trabalho', 'voltar de afastamento', 'exame de retorno'],
-        response: 'O **exame de retorno ao trabalho** é necessário para todo funcionário que ficou afastado por 30 dias ou mais, por motivo de doença, acidente ou parto. Ele deve ser feito no primeiro dia da volta.',
+        response: 'O **exame de retorno ao trabalho** é necessário para funcionários afastados por 30 dias ou mais (por doença, acidente ou parto). Deve ser feito no primeiro dia da volta.',
     },
     {
         keywords: ['exames complementares', 'audiometria', 'espirometria', 'eeg', 'ecg', 'psicossocial', 'rx'],
-        response: 'Sim, o PCMSO pode indicar **exames complementares** de acordo com os riscos. Realizamos uma vasta gama, como **Audiometria**, **EEG**, **ECG**, **Espirometria**, **Acuidade Visual**, **Avaliação Psicossocial**, exames laboratoriais, **Raio-X** e outros.',
+        response: 'Sim, realizamos diversos **exames complementares** indicados no PCMSO, como **Audiometria**, **EEG**, **ECG**, **Espirometria**, **Avaliação Psicossocial**, exames laboratoriais, **Raio-X** e outros.',
     },
     {
         keywords: ['agendar exame', 'marcar aso', 'onde faz o exame'],
@@ -202,59 +202,59 @@ const knowledgeBase: { keywords: string[]; response: string }[] = [
     },
     {
         keywords: ['in loco', 'na minha empresa', 'atendimento na empresa'],
-        response: 'Sim, oferecemos a possibilidade de realizar os **Atestados de Saúde Ocupacional (ASO)** e exames clínicos diretamente na sua empresa (*in loco*), proporcionando mais comodidade e otimizando o tempo dos seus colaboradores.',
+        response: 'Sim, oferecemos atendimento **in loco**, realizando os exames clínicos e a emissão dos **ASOs** diretamente na sua empresa, otimizando o tempo dos seus colaboradores.',
     },
     {
         keywords: ['concurso', 'exame para concurso', 'avaliação para curso'],
-        response: 'Sim, realizamos **Avaliações Clínicas** e emitimos atestados para candidatos de concursos públicos e para a matrícula em cursos em geral.'
+        response: 'Sim, realizamos **avaliações clínicas** e emitimos atestados de saúde para candidatos de concursos públicos e para matrícula em cursos.'
     },
 
     // === ESOCIAL SST ===
     {
         keywords: ['esocial', 'sst', 'social', 'e-social', 'gestão dos envios'],
-        response: 'Sim, cuidamos de toda a **Gestão do eSocial SST**! Gerenciamos os envios dos eventos **S-2210** (CAT), **S-2220** (ASO), **S-2221** (Toxicológico) e **S-2240** (Agentes Nocivos) para garantir que sua empresa esteja sempre em conformidade e evite multas. Quer saber mais? [BOTÃO_WHATSAPP]',
+        response: 'Sim, cuidamos de toda a **Gestão do eSocial SST**! Gerenciamos os envios dos eventos **S-2210** (CAT), **S-2220** (ASO) e **S-2240** (Agentes Nocivos) para garantir que sua empresa fique em dia e evite multas. Quer saber mais? [BOTÃO_WHATSAPP]',
     },
     {
         keywords: ['s-2210', 'cat', 'comunicação de acidente', 'acidente de trabalho'],
-        response: 'O evento **S-2210** é a **Comunicação de Acidente de Trabalho (CAT)**. Ele deve ser enviado ao eSocial até o primeiro dia útil seguinte ao da ocorrência e, em caso de morte, de imediato.',
+        response: 'O evento **S-2210** é a **Comunicação de Acidente de Trabalho (CAT)**. Deve ser enviado ao eSocial até o primeiro dia útil após a ocorrência ou imediatamente, em caso de morte.',
     },
     {
         keywords: ['s-2220', 'monitoramento da saúde', 'enviar aso pro esocial'],
-        response: 'O evento **S-2220** se refere ao **Monitoramento da Saúde do Trabalhador**. Basicamente, as informações do ASO (Atestado de Saúde Ocupacional) e seus exames complementares são enviadas por meio dele.',
+        response: 'O evento **S-2220** detalha o **Monitoramento da Saúde do Trabalhador**. Por ele, são enviadas as informações do **ASO** (Atestado de Saúde Ocupacional) e dos exames complementares.',
     },
     {
         keywords: ['s-2240', 'agentes nocivos', 'enviar pgr pro esocial', 'enviar ltcat'],
-        response: 'O evento **S-2240** (Condições Ambientais do Trabalho - Agentes Nocivos) é crucial. Ele detalha a exposição dos trabalhadores a agentes nocivos, com base no LTCAT, e é fundamental para a aposentadoria especial.',
+        response: 'O evento **S-2240** descreve a exposição do trabalhador a **agentes nocivos**, com base no **LTCAT**. É uma informação essencial para a aposentadoria especial.',
     },
 
     // === TREINAMENTOS E NRs ===
     {
         keywords: ['treinamentos', 'nr', 'normas regulamentadoras', 'curso', 'capacitação', 'palestras'],
-        response: 'Oferecemos diversos **treinamentos, cursos e palestras**, tanto para NRs de segurança (NR-01, NR-05 CIPA, NR-06 EPI, NR-33, NR-35, etc.) quanto para temas de saúde, como primeiros socorros e ergonomia. Capacitar sua equipe é fundamental!',
+        response: 'Oferecemos diversos **treinamentos e cursos de NRs**, como **NR-05 (CIPA)**, **NR-06 (EPI)**, **NR-33 (Espaço Confinado)** e **NR-35 (Trabalho em Altura)**. Capacitar sua equipe é um investimento em segurança!',
     },
     {
         keywords: ['nr-33', 'espaço confinado'],
-        response: 'A **NR-33** estabelece os requisitos para a gestão de segurança e saúde nos trabalhos em **espaços confinados**. Oferecemos treinamento tanto para trabalhadores autorizados quanto para vigias.',
+        response: 'O treinamento da **NR-33** é obrigatório para trabalhos em **espaços confinados**. Capacitamos tanto os trabalhadores autorizados quanto os vigias.',
     },
     {
         keywords: ['nr-35', 'trabalho em altura'],
-        response: 'O treinamento da **NR-35** é obrigatório para qualquer trabalho executado acima de 2 metros do nível inferior, onde haja risco de queda. A segurança em altura é uma prioridade absoluta!',
+        response: 'O treinamento da **NR-35** é obrigatório para qualquer trabalho executado acima de 2 metros de altura, onde haja risco de queda. A segurança em altura é prioridade!',
     },
 
     // === COMERCIAL E PROCESSOS ===
     {
         keywords: ['proposta', 'orçamento', 'preço', 'cotação', 'valor', 'comercial', 'contratar', 'quanto custa', 'valores'],
-        response: 'Que ótimo! Para solicitar uma proposta comercial, por favor, fale com nossa equipe de especialistas no WhatsApp. Eles estão prontos para te ajudar! [BOTÃO_WHATSAPP]',
+        response: 'Excelente! Para solicitar uma proposta comercial, fale com nossa equipe de especialistas no WhatsApp. Eles estão prontos para entender sua necessidade e ajudar! [BOTÃO_WHATSAPP]',
     },
     {
         keywords: ['pequena empresa', 'mei', 'poucos funcionários', 'microempresa'],
-        response: 'Com certeza! Atendemos empresas de **todos os portes**, desde MEI e pequenas empresas até grandes corporações. Nossas soluções são personalizadas para a sua necessidade.',
+        response: 'Com certeza! Atendemos empresas de **todos os portes**, desde MEI e microempresas até grandes indústrias. Nossas soluções são sempre personalizadas para a sua necessidade.',
     },
 
     // === DÚVIDAS FREQUENTES ADICIONAIS ===
     {
         keywords: ['ppp', 'perfil profissiográfico previdenciário'],
-        response: 'O **PPP (Perfil Profissiográfico Previdenciário)** é um documento histórico-laboral do trabalhador. Nós fornecemos as informações técnicas, com base no LTCAT, e a orientação necessária para que sua empresa possa preenchê-lo corretamente.',
+        response: 'O **PPP (Perfil Profissiográfico Previdenciário)** é um documento histórico-laboral do trabalhador. Fornecemos as informações técnicas do **LTCAT** e a orientação necessária para que sua empresa possa preenchê-lo corretamente.',
     },
 ];
 
